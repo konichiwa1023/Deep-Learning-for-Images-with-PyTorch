@@ -1,0 +1,10 @@
+# Create a model
+model = CNNModel()
+print("Original model: ", model)
+
+# Create a new convolutional layer
+model = CNNModel()
+
+# Append the new layer to the model
+conv2 = nn.Conv2d(16, 32, kernel_size=3, stride=1, padding=1)
+model.add_module("conv2", conv2)
